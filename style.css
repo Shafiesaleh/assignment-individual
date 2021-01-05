@@ -266,9 +266,9 @@ body{
 .wrapper .title span {
 	color: yellow;
 }
-.wrapper h1{
-	font-family: 'abuntu', sans-serif;
-	font-size: 52px;
+.wrapper h2{
+	font-family: 'ubuntu', sans-serif;
+	font-size: 40px;
 	margin-bottom: 60px;
 	text-align: center;
 	margin-top: 10%;
@@ -276,9 +276,18 @@ body{
 .family{
 	display: flex;
 	text-align: center;
-	width: auto;
 	justify-content: center;
 }
+.family .title {
+	position: relative;
+	font-family: "ubuntu", sans-serif;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+}
+
 .family .family_member{
 	background: #fff;
 	margin: 5px;
@@ -318,7 +327,6 @@ body{
 .experience .title {
 	text-align: center;
 	font-size: 40px;
-	font-weight: 500;
 	font-family: "ubuntu", sans-serif;
 	margin-bottom: 20px;
 
@@ -353,6 +361,9 @@ body{
 	text-align: center;
 }
 /*education section styling*/
+.education .title span {
+	color: yellow;
+}
 .education .title h1{
 	text-align: center;
 	font-size: 40px;
