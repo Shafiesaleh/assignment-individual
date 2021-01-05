@@ -326,11 +326,13 @@ body{
 /*end family section styling*/
 /*experience section styling*/
 .experience .title {
+	position: relative;
+	font-family: "ubuntu", sans-serif;
 	text-align: center;
 	font-size: 40px;
-	font-family: "ubuntu", sans-serif;
-	margin-bottom: 20px;
-
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
 }
 .experience .title span {
 	color: yellow;
