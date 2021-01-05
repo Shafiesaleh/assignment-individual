@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+/*navbar styling*/
+.navbar{
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	z-index: 10;
+	padding: 30px 0;
+	font-family: 'ubuntu', sans-serif;
+	background-color: black;
+	opacity: 100%;
+
+}
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo a{
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+
+}
+.navbar .logo a span{
+	color: yellow;
+}
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+	color: yellow;
+}
+.navbar .menu li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+
+/* home section styling*/
+.navbar .menu li a:hover{
+	color: yellow;
+
+}
+.home{
+	display: flex;
+	background: url("https://wallpaperaccess.com/full/432480.jpg") no-repeat center;
+	height: 100vh;
+	color: #fff;
+	min-height: 500px;
+	font-family: 'ubuntu', sans-serif;
+
+}
+.home .max-width{
+	margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+	font-size: 28px;
+}
+.home .home-content .text-2{
+	font-size: 60px;
+	font-weight: 600;
+	margin-left: -3px;
+}
+
+.home .home-content .text-3{
+	font-size: 40px;
+	margin: 5px 0;
+}
+.home .home-content a{
+	font-size: 23px;
+	padding: 10px 30px;
+	color: #fff;
+}
+.home .home-content .text-3 span{
+	color: yellow;
+	font-weight: 500;
+}
+.home .home-content a{
+	display: inline-block;
+	background: yellow;
+	font-size: 25px;
+	padding: 12px 36px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid yellow;
+	transition: all 0.3s ease;
+}
+.home .home-content a:hover {
+	color: #fff;
+	background: none;
+	
+}
+
+/*biodata section styling*/
+section{
+	padding: 100px 0;
+}
+.biodata{
+	font-family: "ubuntu", sans-serif;
+	background: black;
+	color: white;
+
+}
+.biodata .title{
+	position: relative;
+	font-family: "ubuntu", sans-serif;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+}
+.biodata .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 180px;
+	height: 3px;
+	background: yellow;
+	transform: translateX(-50%);
+	color: yellow;
+}
+.biodata .title::after{
+	content: " Who am i ?";
+	position: absolute;
+	bottom: -13px;
+	left: 50%;
+	font-size: 20px;
+	color: yellow;
+	padding: 5px;
+	background: black;
+	transform: translateX(-50%);
+}
+.biodata .biodata-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.biodata .biodata-content .left{
+	width: 45%;
+}
+
+.biodata .biodata-content .left img{
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+.biodata .biodata-content .right{
+	width: 55%;
+}
+.biodata .biodata-content .right .text{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.biodata .biodata-content .right .text span {
+	color: yellow;
+}
+.biodata .biodata-content .right p{
+	text-align: justify;
+}
+/*gallery section*/
+}
+.gallery {
+	background: black;
+}
+.gallery .title {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	font-family: "ubuntu", sans-serif;
+	margin-bottom: 20px;
+	
+}
+.gallery .title span {
+	color: yellow;
+}
+.container .box {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 20px;
+}
+.container .box .imgBox {
+	position: relative;
+	overflow: hidden;
+}
+.container .box .imgBox img {
+  	max-width: 100%;
+	transition: transform 2s;
+}
+.container .box:hover .imgBox img {
+	transform: scale(1.2);
+}
+.container .box .details {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.container .box:hover .details {
+	transform: scaleY(1);
+
+}
+.container .box .details .content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50px);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+}
+.container .box .details .content h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #ff0;
+}
+.container .box .details .content p {
+	margin: 10px 0 0;
+	padding: 0;
+}
+/*end gallery section*/
+
+/*family section*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: black;
+	font-family: "ubuntu", sans-serif;
+	color: #fff;
+}
+.wrapper {
+	margin-top:10%;
+}
+.wrapper .title span {
+	color: yellow;
+}
+.wrapper h1{
+	font-family: 'abuntu', sans-serif;
+	font-size: 52px;
+	margin-bottom: 60px;
+	text-align: center;
+	margin-top: 10%;
+}
+.family{
+	display: flex;
+	text-align: center;
+	width: auto;
+	justify-content: center;
+}
+.family .family_member{
+	background: #fff;
+	margin: 5px;
+	margin-bottom: 50px;
+	width: 300px;
+	padding: 20px;
+	line-height: 20px;
+	color: #8e8b8b;
+	position: relative;
+}
+.family .family_member h3 {
+	color: yellow;
+	margin-top: 50px;
+	font-size: 26px;
+}
+.family .family_member p.role {
+	color: #ccc;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 12px 0;  
+}
+.family .family_member .family_img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+}
+.family .family_member .family_img img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+/*end family section*/
+/*experience section*/
+.experience .title {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	font-family: "ubuntu", sans-serif;
+	margin-bottom: 20px;
+
+}
+.experience .title span {
+	color: yellow;
+}
+.experience .exp-content .text{
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.experience .exp-content p{
+	justify-content: center;
+	text-align: justify;
+}
+.experience .exp-content .card {
+	width: calc(33% - 20px);
+	background: #222;
+	border-radius: 6px;
+	padding: 20px 25px;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 100px;
+	box-sizing: border-box;
+
+}
+
+.experience .exp-content .card i{
+	font-size: 50px;
+	color: yellow;
+	text-align: center;
+}
+/*education section styling*/
+.education .title h1{
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	font-family: "ubuntu", sans-serif;
+	margin-bottom: 20px;
+}
+table, td{
+  border: 8px solid yellow;
+}
+
+td{
+  padding: 5px;
+
+}
+
+th{
+  column-span: 3px;
+  color: black;
+  background-color: #fff;
+}
+
+.education img{
+  width: 200px;
+}
+
+td{
+  color: #fff;
+}
+
+table.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.education .table {
+	align-items: center;
+}
+/*end education section styling*/
+/*contact styling section*/
+
+.contact {
+	position: relative;
+	min-height: 70vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.contact .content {
+	max-width: 800px;
+	text-align: center;
+}
+.contact h2 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	font-family: "ubuntu", sans-serif;
+	margin-bottom: 50px;
+}
+.contact h2 span {
+	color: yellow;
+}
+.container .icon i {
+	text-align: center;
+}
