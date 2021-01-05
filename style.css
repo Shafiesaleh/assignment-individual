@@ -51,7 +51,7 @@ html{
 	margin-left: 25px;
 	transition: color 0.3s ease;
 }
-
+/* end navbar styling*/
 /* home section styling*/
 .navbar .menu li a:hover{
 	color: yellow;
@@ -106,7 +106,7 @@ html{
 	background: none;
 	
 }
-
+/* end home section styling*/
 /*biodata section styling*/
 section{
 	padding: 100px 0;
@@ -178,7 +178,8 @@ section{
 .biodata .biodata-content .right p{
 	text-align: justify;
 }
-/*gallery section*/
+/* end biodata section styling*/
+/*gallery section styling*/
 }
 .gallery {
 	background: black;
@@ -247,9 +248,9 @@ section{
 	margin: 10px 0 0;
 	padding: 0;
 }
-/*end gallery section*/
+/*end gallery section styling*/
 
-/*family section*/
+/*family section styling*/
 *{
 	margin: 0;
 	padding: 0;
@@ -322,8 +323,8 @@ body{
 	border-radius: 50%;
 }
 
-/*end family section*/
-/*experience section*/
+/*end family section styling*/
+/*experience section styling*/
 .experience .title {
 	text-align: center;
 	font-size: 40px;
@@ -430,3 +431,4 @@ table.center{
 .container .icon i {
 	text-align: center;
 }
+/* end contact section styling*/
